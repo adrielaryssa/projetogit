@@ -1,40 +1,35 @@
-let nome = prompt ("Digite seu nome:")
-var min =1
-var vsaque, op
-var deposito =0
+let valordsaq= prompt ("Digite o valor que deseja sacar:")
 
-var saldo = Infinity
+let resto = Number(valordsaq)
 
-do{
-    op = parseInt(prompt("Digite a opção desejada:\n 1-saque \n2-Deeposito\n3-Saldo"))
-    switch(op){
-        case 1: 
-        vsaque= parseInt(prompt("Digite o valor do saque"))
-        if (saldo = saldo -vsaque) {
-            alert ("Saque em processamento ]... aguarde")
-            
-        }
+while (resto>=100){
 
-        case 2:
-            deposito = parseInt(prompt("Digite o valor do deposito:"))
+    document.write('<img src = "img/100.jpg">')
+    resto = resto-100
 
-            alert ("Agora voce está" +deposito+ "R$ mais rico ")
-            saldo = saldo + deposito;
-        case 3: 
+}
+while (resto>=50){
 
-        alert ("Seu saldo em conta é de... Inifitos dinheirinhos, parabéns voce é muito rico!!!!")
-        
+    document.write('<img src = "img/50.jpg">')
+    resto = resto-50
 
+}
+while (resto>=10){
 
+    document.write('<img src = "img/10.jpg">')
+    resto = resto-10
 
+}
 
+while (resto>=5){ 
 
+    document.write('<img src = "img/5.jpg">')
+    resto = resto-5
+}
 
+while (resto>=1){
 
-
-
-    }
-
-}while (op != 0 ){
+    document.write('<img src = "img/1.jpg">')
+    resto = resto-1
 
 }
